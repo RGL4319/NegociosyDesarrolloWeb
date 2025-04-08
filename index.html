@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,11 @@
 
     <div class="titulo-conteiner">
         <a name="Inicio">
-            <h1 class="titulo">Bienvenido a la tarea 2</h1>
+            <h1 class="titulo">Bienvenido a la tienda de comida japonesa</h1>
         </a>
+        <p style="text-align: center; max-width: 600px; margin: auto;">
+            Explora nuestros platillos japoneses favoritos y selecciona la cantidad que deseas. El total de tu compra se calculará automáticamente. ¡Disfruta de la experiencia!
+        </p>
     </div>
 
     <div class="catalogo">
@@ -23,16 +26,17 @@
                     <div class="producto-conteiner">
                         <div class="imagen-conteiner">
                             <div class="imagen-producto">
-                                <img src="img/sushi.jpg" alt="" id="producto">
+                                <img src="img/sushi.jpg" alt="Sushi clásico" id="producto">
                             </div>
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Producto 1</h2>
+                                <h2>Sushi Clásico</h2>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $10</p>
-                                <p id="cantidad">Cantidad: </p>
+                                <p>Rollos de arroz con alga nori rellenos de atún y pepino fresco. Ideal para quienes disfrutan de sabores tradicionales japoneses.</p>
+                                <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
                             <div class="info-text">
@@ -45,16 +49,17 @@
                     <div class="producto-conteiner">
                         <div class="imagen-conteiner">
                             <div class="imagen-producto">
-                                <img src="img/sushi.jpg" alt="" id="producto">
+                                <img src="img/tempura.jpg" alt="Sushi tempura" id="producto">
                             </div>
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Producto 2</h2>
+                                <h2>Sushi Tempura</h2>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $20</p>
-                                <p id="cantidad">Cantidad: </p>
+                                <p>Rollos de camarón empanizado con aguacate, cubiertos con salsa teriyaki y ajonjolí tostado. Crujiente y sabroso.</p>
+                                <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
                             <div class="info-text">
@@ -69,16 +74,17 @@
                     <div class="producto-conteiner">
                         <div class="imagen-conteiner">
                             <div class="imagen-producto">
-                                <img src="img/sushi.jpg" alt="" id="producto">
+                                <img src="img/sashimi.jpg" alt="Sashimi variado" id="producto">
                             </div>
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Producto 3</h2>
+                                <h2>Sashimi Variado</h2>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $30</p>
-                                <p id="cantidad">Cantidad: </p>
+                                <p>Delicadas láminas de salmón, atún y robalo servidas frescas sobre cama de hielo. Perfecto para amantes del pescado puro.</p>
+                                <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
                             <div class="info-text">
@@ -91,16 +97,17 @@
                     <div class="producto-conteiner">
                         <div class="imagen-conteiner">
                             <div class="imagen-producto">
-                                <img src="img/sushi.jpg" alt="" id="producto">
+                                <img src="img/ramen.jpg" alt="Ramen especial" id="producto">
                             </div>
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Producto 4</h2>
+                                <h2>Ramen Especial</h2>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $40</p>
-                                <p id="cantidad">Cantidad: </p>
+                                <p>Sopa caliente con fideos artesanales, cerdo marinado, huevo cocido y verduras frescas en caldo de miso.</p>
+                                <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
                             <div class="info-text">
@@ -112,14 +119,16 @@
             </tr>
         </table>
     </div>
+
     <div class="compra">
         <h2>Total:</h2>
         <input type="text" name="total-productos" id="total-productos" readonly>
         <button class="boton-comprar" id="boton-comprar">Comprar</button>
     </div>
+
     <div class="lista-tiendas">
         <a name="Lista-tiendas">
-            <h2>Lista de tiendas que venden "PRODUCTO 1"</h2>
+            <h2>Lista de tiendas que venden "Sushi Clásico"</h2>
         </a>
         <ul>
             <li>Tienda 1</li>
@@ -131,20 +140,22 @@
         </ul>
         <button class="regreso-tiendas"><a href="#Inicio">Regreso</a></button>
     </div>
+
     <div class="lista-tiendas">
         <a name="Lista-pasos">
-            <h2>¿Cómo usar el "PRODUCTO 3"?</h2>
+            <h2>¿Cómo usar el "Sashimi Variado"?</h2>
         </a>
         <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-            <li>Paso 4</li>
-            <li>Paso 5</li>
-            <li>Paso 6</li>
+            <li>Servir en plato frío.</li>
+            <li>Acompañar con salsa de soya y wasabi.</li>
+            <li>Consumir inmediatamente después de servido.</li>
+            <li>No requiere cocción.</li>
+            <li>Ideal como entrada o plato principal.</li>
+            <li>Mantener refrigerado hasta su consumo.</li>
         </ul>
         <button class="regreso-tiendas"><a href="#Inicio">Regreso</a></button>
     </div>
+
     <footer class="footer">
         <h2>Tarea 2</h2>
         <p>Integrantes: </p>
@@ -156,9 +167,7 @@
     </footer>
 
     <script>
-        // Precios de los productos en el mismo orden que los inputs
         const precios = [10, 20, 30, 40];
-
         const inputs = document.querySelectorAll('.input-catalogo');
         const totalField = document.getElementById('total-productos');
         const botonComprar = document.getElementById('boton-comprar');
@@ -179,12 +188,11 @@
         botonComprar.addEventListener('click', () => {
             const totalTexto = totalField.value;
             alert(`Total de la compra: ${totalTexto}`);
-            // Reiniciar cantidades y total
             inputs.forEach(input => input.value = 0);
             actualizarTotal();
         });
 
-        actualizarTotal(); // inicializa el total
+        actualizarTotal();
     </script>
 
 </body>

@@ -1,137 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles2.css">
     <title>Página 2</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 
 <body>
     <div class="titulo-conteiner">
-        <h1 class="titulo">Página 2</h1>
+        <h1 class="titulo">Tabla comparativa de productos japoneses</h1>
     </div>
 
     <div class="similar">
         <table class="tabla-similares">
             <tr>
-                <th class="tablaSim-conteiner">
-                    <div class="titulo-tabla">
-                        <h2>Producto</h2>
-                    </div>
-                </th>
-                <th class="tablaSim-conteiner">
-                    <div class="titulo-tabla">
-                        <h2>Atributo 1</h2>
-                    </div>
-                </th>
-                <th class="tablaSim-conteiner">
-                    <div class="titulo-tabla">
-                        <h2>Atributo 2</h2>
-                    </div>
-                </th>
-                <th class="tablaSim-conteiner">
-                    <div class="titulo-tabla">
-                        <h2>Atributo 3</h2>
-                    </div>
-                </th>
+                <th>Producto</th>
+                <th>Tipo de preparación</th>
+                <th>Ingredientes principales</th>
+                <th>Sugerencia de consumo</th>
             </tr>
+
             <tr>
-                <td class="tablaSim-conteiner">
-                    <div class="producto-tabla">
-                        <div class="producto-titulo">
-                            <h2>Info</h2>
-                        </div>
-                        <div class="producto-imagen">
-                            <div class="imagen">
-                                <img src="img/sushi.jpg" alt="" id="producto">
-                            </div>
-                        </div>
-                        <div class="producto-info">
-                            <p>Precio:</p>
-                        </div>
-                    </div>
+                <td>
+                    <h2>Sushi Clásico</h2>
+                    <img src="img/sushi.jpg" alt="Sushi clásico" width="150">
+                    <p>Precio: $10</p>
                 </td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
+                <td>Frío</td>
+                <td>Atún, arroz, alga nori, pepino</td>
+                <td>Como entrada ligera</td>
             </tr>
+
             <tr>
-                <td class="tablaSim-conteiner">
-                    <div class="producto-tabla">
-                        <div class="producto-titulo">
-                            <h2>Info</h2>
-                        </div>
-                        <div class="producto-imagen">
-                            <div class="imagen">
-                                <img src="img/sushi.jpg" alt="" id="producto">
-                            </div>
-                        </div>
-                        <div class="producto-info">
-                            <p>Precio:</p>
-                        </div>
-                    </div>
+                <td>
+                    <h2>Sushi Tempura</h2>
+                    <img src="img/tempura.jpg" alt="Sushi tempura" width="150">
+                    <p>Precio: $20</p>
                 </td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
+                <td>Frito</td>
+                <td>Camarón empanizado, aguacate, teriyaki</td>
+                <td>Ideal para una comida crujiente</td>
             </tr>
+
             <tr>
-                <td class="tablaSim-conteiner">
-                    <div class="producto-tabla">
-                        <div class="producto-titulo">
-                            <h2>Info</h2>
-                        </div>
-                        <div class="producto-imagen">
-                            <div class="imagen">
-                                <img src="img/sushi.jpg" alt="" id="producto">
-                            </div>
-                        </div>
-                        <div class="producto-info">
-                            <p>Precio:</p>
-                        </div>
-                    </div>
+                <td>
+                    <h2>Sashimi Variado</h2>
+                    <img src="img/sashimi.jpg" alt="Sashimi variado" width="150">
+                    <p>Precio: $30</p>
                 </td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
+                <td>Crudo</td>
+                <td>Salmón, atún, robalo</td>
+                <td>Servir en plato frío con soya</td>
             </tr>
+
             <tr>
-                <td class="tablaSim-conteiner">
-                    <div class="producto-tabla">
-                        <div class="producto-titulo">
-                            <h2>Info</h2>
-                        </div>
-                        <div class="producto-imagen">
-                            <div class="imagen">
-                                <img src="img/sushi.jpg" alt="" id="producto">
-                            </div>
-                        </div>
-                        <div class="producto-info">
-                            <p>Precio:</p>
-                        </div>
-                    </div>
+                <td>
+                    <h2>Ramen Especial</h2>
+                    <img src="img/ramen.jpg" alt="Ramen especial" width="150">
+                    <p>Precio: $40</p>
                 </td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
-                <td class="tablaSim-conteiner"></td>
+                <td>Caliente</td>
+                <td>Fideos, cerdo, huevo, verduras</td>
+                <td>Perfecto como plato principal</td>
             </tr>
         </table>
     </div>
+
     <div class="regreso">
         <button class="regreso-pagina"><a href="index.html">Regreso</a></button>
     </div>
+
     <div class="imagen-completa">
         <a name="imagen-ampliada">
-            <h2>Imagen "Producto 4" ampliada</h2>
+            <h2>Imagen "Ramen Especial" ampliada</h2>
         </a>
-        <img src="img/sushi.jpg" alt="">
+        <img src="img/ramen.jpg" alt="Ramen ampliado" width="400">
         <button class="regreso-pagina"><a href="index.html">Regreso</a></button>
     </div>
+
     <footer class="footer">
         <h2>Tarea 2</h2>
-        <p>Integrantes: </p>
+        <p>Integrantes:</p>
         <ul>
             <li>Acuña Carranza Carlos Enrique</li>
             <li>García Lemus Rocio</li>
