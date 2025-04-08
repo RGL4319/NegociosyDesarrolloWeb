@@ -101,3 +101,76 @@
 .producto-info p {
     padding-left: 15%;
 }
+
+.regreso {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.regreso-pagina {
+    background-color: rgb(196, 242, 242);
+    align-self: flex-start;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.regreso a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.imagen-completa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-completa h2 {
+    font-size: xx-large;
+}
+
+.imagen-completa img {
+    padding: 50px 0;
+}
+
+.imagen-completa button {
+    align-self: flex-start;
+}
+
+.imagen-completa a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer h2 {
+    color: white;
+    margin-left: 1em;
+    font-size: large;
+    align-self: center;
+}
+
+.footer p {
+    color: white;
+    margin-left: 1em;
+}
+
+.footer li {
+    color: white;
+    margin-left: 2em;
+}

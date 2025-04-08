@@ -26,13 +26,6 @@
     height: 90vh;
     width: 100%;
     display: flex;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; */
 }
 
 .tabla-catalogo {
@@ -58,10 +51,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-
-    /* width: calc(100% / 2 - 6px);
-    height: calc(100% / 2 - 6px);
-    outline: 4px solid rgb(211, 209, 209); */
 }
 
 .imagen-conteiner {
@@ -72,7 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-bottom: 2px solid black; */
+    border-bottom: 2px solid black;
 }
 
 .imagen-producto {
@@ -82,14 +71,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* object-fit: contain; */
 }
 
 #producto {
     width: inherit;
     height: 24vh;
     object-fit: cover;
-    /* display: block; */
 }
 
 .info {
@@ -158,7 +145,6 @@
     width: 100%;
     height: 20vh;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
 }
 
@@ -183,4 +169,71 @@
     border: 3px solid black;
     border-radius: 25px;
     margin-left: 15%;
+}
+
+.lista-tiendas {
+    /* background-color: aquamarine; */
+    border-top: 2px dashed black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.lista-tiendas h2 {
+    padding: 1em 0 0 1em;
+    font-size: x-large;
+}
+
+.lista-tiendas ul {
+    margin: 0;
+    padding: 1em 0 0 3em;
+    font-size: large;
+}
+
+.lista-tiendas li {
+    padding-bottom: 1em;
+}
+
+.regreso-tiendas {
+    background-color: rgb(196, 242, 242);
+    align-self: flex-start;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.lista-tiendas a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer h2 {
+    color: white;
+    margin-left: 1em;
+    font-size: large;
+    align-self: center;
+}
+
+.footer p {
+    color: white;
+    margin-left: 1em;
+}
+
+.footer li {
+    color: white;
+    margin-left: 2em;
 }
