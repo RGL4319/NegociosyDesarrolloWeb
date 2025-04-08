@@ -8,6 +8,14 @@
     background: transparent;
 }
 
+img {
+    width: 200px;   /* o el tamaño que desees */
+    height: 200px;
+    object-fit: cover; /* mantiene proporciones, recortando si es necesario */
+    border: 1px solid black; /* opcional, ayuda a ver los bordes */
+}
+
+
 .titulo-conteiner {
     height: 10vh;
     width: 100%;
