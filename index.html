@@ -31,7 +31,7 @@
                                 <h2>Producto 1</h2>
                             </div>
                             <div class="info-descripcion">
-                                <p id="precio">Precio: </p>
+                                <p id="precio">Precio: $10</p>
                                 <p id="cantidad">Cantidad: </p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -53,7 +53,7 @@
                                 <h2>Producto 2</h2>
                             </div>
                             <div class="info-descripcion">
-                                <p id="precio">Precio: </p>
+                                <p id="precio">Precio: $20</p>
                                 <p id="cantidad">Cantidad: </p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -77,7 +77,7 @@
                                 <h2>Producto 3</h2>
                             </div>
                             <div class="info-descripcion">
-                                <p id="precio">Precio: </p>
+                                <p id="precio">Precio: $30</p>
                                 <p id="cantidad">Cantidad: </p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -99,7 +99,7 @@
                                 <h2>Producto 4</h2>
                             </div>
                             <div class="info-descripcion">
-                                <p id="precio">Precio: </p>
+                                <p id="precio">Precio: $40</p>
                                 <p id="cantidad">Cantidad: </p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -114,8 +114,8 @@
     </div>
     <div class="compra">
         <h2>Total:</h2>
-        <input type="text" name="total-productos" id="total-productos">
-        <button class="boton-comprar">Comprar</button>
+        <input type="text" name="total-productos" id="total-productos" readonly>
+        <button class="boton-comprar" id="boton-comprar">Comprar</button>
     </div>
     <div class="lista-tiendas">
         <a name="Lista-tiendas">
@@ -154,6 +154,38 @@
             <li>Axel</li>
         </ul>
     </footer>
+
+    <script>
+        // Precios de los productos en el mismo orden que los inputs
+        const precios = [10, 20, 30, 40];
+
+        const inputs = document.querySelectorAll('.input-catalogo');
+        const totalField = document.getElementById('total-productos');
+        const botonComprar = document.getElementById('boton-comprar');
+
+        function actualizarTotal() {
+            let total = 0;
+            inputs.forEach((input, index) => {
+                const cantidad = parseInt(input.value) || 0;
+                total += cantidad * precios[index];
+            });
+            totalField.value = `$${total}`;
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('input', actualizarTotal);
+        });
+
+        botonComprar.addEventListener('click', () => {
+            const totalTexto = totalField.value;
+            alert(`Total de la compra: ${totalTexto}`);
+            // Reiniciar cantidades y total
+            inputs.forEach(input => input.value = 0);
+            actualizarTotal();
+        });
+
+        actualizarTotal(); // inicializa el total
+    </script>
 
 </body>
 
