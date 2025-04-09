@@ -8,13 +8,9 @@
     background: transparent;
 }
 
-img {
-    width: 200px;   /* o el tamaño que desees */
-    height: 200px;
-    object-fit: cover; /* mantiene proporciones, recortando si es necesario */
-    border: 1px solid black; /* opcional, ayuda a ver los bordes */
+td {
+    height: 24%;
 }
-
 
 .titulo-conteiner {
     height: 10vh;
@@ -44,8 +40,17 @@ img {
 .tablaSim-conteiner {
     /* background-color: black; */
     width: 25%;
-    height: 20%;
+    /* height: auto; */
     border: 3px solid black;
+}
+
+.texto {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.texto p {
+    font-size: large;
 }
 
 .titulo-tabla {
@@ -58,15 +63,15 @@ img {
 
 .titulo-tabla h2 {
     /* color: white; */
-    font-size: x-large;
+    font-size: large;
 }
 
 .producto-tabla {
     /* background-color: aqua; */
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .producto-titulo {
@@ -97,7 +102,7 @@ img {
 
 #producto {
     width: inherit;
-    height: 10vh;
+    height: 13vh;
     object-fit: cover;
 }
 

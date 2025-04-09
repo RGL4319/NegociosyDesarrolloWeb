@@ -11,12 +11,18 @@
 <body>
 
     <div class="titulo-conteiner">
-        <a name="Inicio">
-            <h1 class="titulo">Bienvenido a la tienda de comida japonesa</h1>
-        </a>
-        <p style="text-align: center; max-width: 600px; margin: auto;">
-            Explora nuestros platillos japoneses favoritos y selecciona la cantidad que deseas. El total de tu compra se calculará automáticamente. ¡Disfruta de la experiencia!
-        </p>
+        <div class="titulo1">
+            <a name="Inicio">
+                <h1 class="titulo">Bienvenido a la tienda de comida japonesa</h1>
+            </a>
+        </div>
+        <div class="titulo2">
+            <p>
+                Explora nuestros platillos japoneses favoritos y selecciona la cantidad que deseas. El total de tu
+                compra se
+                calculará automáticamente. ¡Disfruta de la experiencia!
+            </p>
+        </div>
     </div>
 
     <div class="catalogo">
@@ -31,11 +37,17 @@
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Sushi Clásico</h2>
+                                <div class="nombre">
+                                    <h2>Sushi Clásico</h2>
+                                </div>
+                                <div class="nombre-desc">
+                                    <p>Rollos de arroz con alga nori rellenos de atún y pepino fresco. Ideal para
+                                        quienes
+                                        disfrutan de sabores tradicionales japoneses.</p>
+                                </div>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $10</p>
-                                <p>Rollos de arroz con alga nori rellenos de atún y pepino fresco. Ideal para quienes disfrutan de sabores tradicionales japoneses.</p>
                                 <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -54,11 +66,17 @@
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Sushi Tempura</h2>
+                                <div class="nombre">
+                                    <h2>Sushi Tempura</h2>
+                                </div>
+                                <div class="nombre-desc">
+                                    <p>Rollos de camarón empanizado con aguacate, cubiertos con salsa teriyaki y
+                                        ajonjolí
+                                        tostado. Crujiente y sabroso.</p>
+                                </div>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $20</p>
-                                <p>Rollos de camarón empanizado con aguacate, cubiertos con salsa teriyaki y ajonjolí tostado. Crujiente y sabroso.</p>
                                 <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -79,11 +97,16 @@
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Sashimi Variado</h2>
+                                <div class="nombre">
+                                    <h2>Sushi Variado</h2>
+                                </div>
+                                <div class="nombre-desc">
+                                    <p>Delicadas láminas de salmón, atún y robalo servidas frescas sobre cama de hielo.
+                                        Perfecto para amantes del pescado puro.</p>
+                                </div>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $30</p>
-                                <p>Delicadas láminas de salmón, atún y robalo servidas frescas sobre cama de hielo. Perfecto para amantes del pescado puro.</p>
                                 <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -102,11 +125,17 @@
                         </div>
                         <div class="info">
                             <div class="info-titulo">
-                                <h2>Ramen Especial</h2>
+                                <div class="nombre">
+                                    <h2>Sushi Especial</h2>
+                                </div>
+                                <div class="nombre-desc">
+                                    <p>Sopa caliente con fideos artesanales, cerdo marinado, huevo cocido y verduras
+                                        frescas
+                                        en caldo de miso.</p>
+                                </div>
                             </div>
                             <div class="info-descripcion">
                                 <p id="precio">Precio: $40</p>
-                                <p>Sopa caliente con fideos artesanales, cerdo marinado, huevo cocido y verduras frescas en caldo de miso.</p>
                                 <p id="cantidad">Cantidad:</p>
                                 <input type="number" min="0" value="0" class="input-catalogo">
                             </div>
@@ -131,19 +160,19 @@
             <h2>Lista de tiendas que venden "Sushi Clásico"</h2>
         </a>
         <ul>
-            <li>Tienda 1</li>
-            <li>Tienda 2</li>
-            <li>Tienda 3</li>
-            <li>Tienda 4</li>
-            <li>Tienda 5</li>
-            <li>Tienda 6</li>
+            <li>Sushi Tori Plaza</li>
+            <li>Nagomi Central</li>
+            <li>Hanami Norte</li>
+            <li>Koi Station</li>
+            <li>Wasabi del Sol</li>
+            <li>Tsuki Garden</li>
         </ul>
         <button class="regreso-tiendas"><a href="#Inicio">Regreso</a></button>
     </div>
 
     <div class="lista-tiendas">
         <a name="Lista-pasos">
-            <h2>¿Cómo usar el "Sashimi Variado"?</h2>
+            <h2>¿Cómo mantener el "Sashimi Variado"?</h2>
         </a>
         <ul>
             <li>Servir en plato frío.</li>
