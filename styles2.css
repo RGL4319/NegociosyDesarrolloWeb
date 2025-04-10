@@ -187,3 +187,6 @@ td {
     color: white;
     margin-left: 2em;
 }
+body {
+    background-color: rgba(192, 164, 168, 0.568) !important;
+}
